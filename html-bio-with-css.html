@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+  <style>
+
+    body{
+      background-color: #efeee7;
+      font: Georgia,"Times New Roman",Times,serif;
+      color:#333333 ;
+      margin: 0;
+      padding:0;
+    }
+    header{
+      background-color: #333333;
+      padding-top: 0.5px;
+      padding-bottom: 0.5px;
+      
+      
+
+    }
+
+    h1{
+      color: #eee;
+      font-size: 28px;
+      text-align: center;
+      padding-bottom: 2px;
+
+      
+      
+    }
+
+
+    h2{
+      font-size:24px ;
+     
+    }
+
+      #main-bio{
+      float: left;
+
+      }
+
+      #contact-info{
+      float: left;
+      
+      /* Note 1.5 more than font, tool does it for you.  */
+      line-height: 1.5;
+      padding-left: 50px;
+      
+      }
+
+      #bio-image{
+        float: left;
+        margin-right: 50px;
+        width: 200px;
+        height: 200px;
+        
+        
+        
+        
+      }
+
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+     
+      
+    }
+
+     .contactLink{
+      color: #d21034;
+    }
+
+    .text{
+      width: 750px;
+      height: 100px;
+    }
+
+    </style>
+</head>
+
+<body>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+
+  <div class="container">
+    <section id="main-bio">
+
+      <h2>Carl Benbow</h2>
+
+      <img src="CarlPhoto.png" alt="Carl Benbow" id="bio-image">
+
+      <div class="text"><p>Carl Benbow is a SAFe Program Consultant and the Chief Executive Officer at Synergistic Agility. He has a proven track record of leadership expertise in improving operational efficiency for large-scale initiatives, both in private and government sectors. Carl oversees an organization that provides certification training for large and small organizations assisting in Scaled Agile transformations, increased productivity, and greater market penetration.           
+        Carl has a master’s degree in Business Administration (MBA) from Norwich University and bachelor’s degree in Healthcare Administration from Stonehill College. He is also a Scaled Agile Program Consultant, Agile Certified Practitioner, Project Management Professional, Earned Value Management Professional, and holds a Lean Six Sigma Master Black Belt certification.</p></div></section>
+    </section>
+
+    <!-- Added ID to select the Contact info section in the CSS  -->
+    <section id="contact-info">
+      <h2>Contact Info</h2>
+      <ul> 
+        <!-- Added a class to the contact info text so that I can style the text -->
+        <li><strong>Email:</strong> <a href="#" class="contactLink">cbenbow@synergisticagility.com</a></li>
+        <li><strong>Github:</strong> <a href="#" class="contactLink">SynAd</a></li>
+        <li><strong>Portfolio:</strong> <a href="#" class="contactLink">coming soon</a></li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+
+</html>
